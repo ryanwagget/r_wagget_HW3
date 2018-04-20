@@ -1,4 +1,4 @@
-.comments { 
+.comments {
 	width: 45%; display: inline-block;
 
 	 > div {
@@ -41,9 +41,9 @@
 }
 
 .add-comment {
-	// float: right; 
-	width: 45%; 
-	display: inline-block; 
+	// float: right;
+	width: 45%;
+	display: inline-block;
 	padding-left: 1.5em;
 
 	label:not(.star-rating-star) {
@@ -79,8 +79,8 @@
 	.star-rating { margin: 4px 0 10px 0; }
 }
 
-.floatRight { 
-	float : right; 
+.floatRight {
+	float : right;
 }
 
 .review-heading { font-size: 1.5em; }

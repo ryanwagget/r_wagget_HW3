@@ -1,3 +1,12 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <section id="video">
   <!-- back button here -->
   <a href="/" class="back-button">
@@ -29,4 +38,13 @@
     <textarea name="review" id="review" placeholder="What did you think?" v-model="review"></textarea>
     <input type="submit" value="Submit your review!" v-on:click="addReview">
   </aside>
+
+  <div class="fb-share-button" data-mobile_iframe="true" data-href="'localhost:3000/movies/' + movie.movies_id + '/' + movie.movies_trailer" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" class="fb-xfbml-parse-ignore">Share</a></div>
+
+  <!-- <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world" data-url="https://dev.twitter.com/web/tweet-button"
+  data-text="https://dev.twitter.com/web/tweet-button">Tweet</a> -->
+
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </section>
